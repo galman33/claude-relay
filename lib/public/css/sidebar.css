@@ -712,3 +712,18 @@
   height: 20px;
 }
 
+/* --- Worktree badge (session list) --- */
+.session-worktree-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+  color: var(--success);
+  vertical-align: middle;
+  opacity: 0.8;
+}
+
+.session-worktree-badge .lucide {
+  width: 12px;
+  height: 12px;
+}
+

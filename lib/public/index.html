@@ -55,6 +55,7 @@
     <div id="sidebar-panel-sessions" class="sidebar-panel">
       <div id="session-actions">
         <button id="new-session-btn"><i data-lucide="plus"></i> <span>New session</span></button>
+        <button id="new-worktree-btn"><i data-lucide="git-branch"></i> <span>Worktree session</span></button>
         <button id="resume-session-btn"><i data-lucide="link"></i> <span>Resume with ID</span></button>
         <button id="file-browser-btn"><i data-lucide="folder-tree"></i> <span>File browser</span></button>
         <button id="terminal-sidebar-btn"><i data-lucide="square-terminal"></i> <span>Terminal</span></button>
@@ -379,6 +380,21 @@
     <div class="confirm-actions">
       <button class="confirm-btn confirm-cancel" id="resume-cancel">Cancel</button>
       <button class="confirm-btn confirm-ok" id="resume-ok">Resume</button>
+    </div>
+  </div>
+</div>
+
+<div id="worktree-modal" class="hidden">
+  <div class="confirm-backdrop"></div>
+  <div class="confirm-dialog">
+    <div class="resume-modal-title">New worktree session</div>
+    <div class="resume-modal-body">
+      <p>Create an isolated session in a new git worktree. Each worktree gets its own branch and working directory for parallel work.</p>
+      <input type="text" id="worktree-name-input" placeholder="Name (optional, auto-generated if empty)" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="confirm-actions">
+      <button class="confirm-btn confirm-cancel" id="worktree-cancel">Cancel</button>
+      <button class="confirm-btn confirm-ok" id="worktree-ok">Create</button>
     </div>
   </div>
 </div>

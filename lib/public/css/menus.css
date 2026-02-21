@@ -446,8 +446,9 @@
 #mode-btn:hover { color: var(--text-secondary); background: rgba(255,255,255,0.06); }
 #mode-btn.active { color: var(--text-secondary); background: rgba(255,255,255,0.06); }
 
-#mode-btn.mode-plan { color: #CFA643; }
-#mode-btn.mode-auto { color: #57AB5A; }
+#mode-btn.mode-plan { color: var(--warning); }
+#mode-btn.mode-auto { color: var(--success); }
+#mode-btn.mode-ask { color: var(--text-muted); }
 
 #mode-menu {
   position: absolute;
@@ -692,6 +693,11 @@
     left: 12px;
     width: auto;
     max-height: 60vh;
+  }
+
+  #mode-menu {
+    right: auto;
+    left: 0;
   }
 }
 

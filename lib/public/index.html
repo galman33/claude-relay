@@ -77,10 +77,13 @@
     </div>
     <div id="sidebar-footer">
       <button id="sidebar-footer-btn">
-        <span class="footer-btn-label"><svg class="footer-mascot" viewBox="0 0 12 12" width="16" height="16"><rect x="0" y="0" width="12" height="12" rx="2" fill="#3E3C37"/><rect x="5" y="0" width="1" height="1" fill="#6D6860"/><rect x="6" y="0" width="1" height="1" fill="#6D6860"/><rect x="5" y="1" width="1" height="1" fill="#6D6860"/><rect x="6" y="1" width="1" height="1" fill="#6D6860"/><rect x="2" y="2" width="8" height="2" fill="#908B81"/><rect x="2" y="4" width="1" height="2" fill="#908B81"/><rect x="3" y="4" width="1" height="2" fill="#262522"/><rect x="4" y="4" width="4" height="2" fill="#908B81"/><rect x="8" y="4" width="1" height="2" fill="#262522"/><rect x="9" y="4" width="1" height="2" fill="#908B81"/><rect x="0" y="6" width="12" height="2" fill="#908B81"/><rect x="2" y="8" width="8" height="2" fill="#908B81"/><rect x="2" y="10" width="1" height="2" fill="#908B81"/><rect x="4" y="10" width="1" height="2" fill="#908B81"/><rect x="7" y="10" width="1" height="2" fill="#908B81"/><rect x="9" y="10" width="1" height="2" fill="#908B81"/></svg> Claude Relay <span id="footer-version" class="footer-version"></span></span>
+        <span class="footer-btn-label"><svg class="footer-mascot" viewBox="0 0 12 12" width="16" height="16"><rect x="0" y="0" width="12" height="12" rx="2" fill="#3E3C37"/><rect x="5" y="0" width="1" height="1" fill="#6D6860"/><rect x="6" y="0" width="1" height="1" fill="#6D6860"/><rect x="5" y="1" width="1" height="1" fill="#6D6860"/><rect x="6" y="1" width="1" height="1" fill="#6D6860"/><rect x="2" y="2" width="8" height="2" fill="#908B81"/><rect x="2" y="4" width="1" height="2" fill="#908B81"/><rect x="3" y="4" width="1" height="2" fill="#262522"/><rect x="4" y="4" width="4" height="2" fill="#908B81"/><rect x="8" y="4" width="1" height="2" fill="#262522"/><rect x="9" y="4" width="1" height="2" fill="#908B81"/><rect x="0" y="6" width="12" height="2" fill="#908B81"/><rect x="2" y="8" width="8" height="2" fill="#908B81"/><rect x="2" y="10" width="1" height="2" fill="#908B81"/><rect x="4" y="10" width="1" height="2" fill="#908B81"/><rect x="7" y="10" width="1" height="2" fill="#908B81"/><rect x="9" y="10" width="1" height="2" fill="#908B81"/></svg> <span id="footer-app-name">Claude Relay</span> <span id="footer-version" class="footer-version"></span></span>
         <i data-lucide="ellipsis" style="width:14px;height:14px"></i>
       </button>
       <div id="sidebar-footer-menu" class="hidden">
+        <button class="sidebar-menu-item" id="footer-app-name-btn">
+          <i data-lucide="type"></i> <span>App name</span>
+        </button>
         <a class="sidebar-menu-item" href="https://github.com/chadbyte/claude-relay" target="_blank" rel="noopener">
           <i data-lucide="github"></i> <span>GitHub</span>
         </a>
@@ -399,6 +402,21 @@
     <div class="confirm-actions">
       <button class="confirm-btn confirm-cancel" id="rewind-cancel">Cancel</button>
       <button class="confirm-btn confirm-ok" id="rewind-confirm">Rewind</button>
+    </div>
+  </div>
+</div>
+
+<div id="app-name-modal" class="hidden">
+  <div class="confirm-backdrop"></div>
+  <div class="confirm-dialog">
+    <div class="resume-modal-title">App name</div>
+    <div class="resume-modal-body">
+      <p>Set a custom name for the PWA. This changes the title shown in the browser, home screen, and notifications.</p>
+      <input type="text" id="app-name-input" placeholder="Claude Relay" autocomplete="off" spellcheck="false" maxlength="50">
+    </div>
+    <div class="confirm-actions">
+      <button class="confirm-btn confirm-cancel" id="app-name-cancel">Cancel</button>
+      <button class="confirm-btn confirm-ok" id="app-name-save">Save</button>
     </div>
   </div>
 </div>
